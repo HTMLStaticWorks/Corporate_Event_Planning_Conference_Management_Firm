@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Plan a High-Impact Corporate Conference | Summit & Co. Insights</title>
+  <meta name="description" content="Read our operational guide on corporate conference planning, delegate registration architecture, venue contracting, and mainstage AV execution.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-text" href="index.html">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </a>
+
+      <div class="d-flex align-items-center d-xl-none">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-gold"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Menu -->
+      <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between" id="desktopNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item dropdown-item-custom" href="index.html">Home — Agency Overview</a></li>
+              <li><a class="dropdown-item dropdown-item-custom" href="home-2.html">Home 2 — Conference Production</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="insights.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          <a href="signup.html" class="btn btn-gold text-nowrap">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV OFFCANVAS -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+      <h5 class="offcanvas-title navbar-brand-text fs-4" id="mobileNavOffcanvasLabel">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="nav flex-column gap-2 mt-3">
+        <div class="accordion accordion-flush" id="mobileMenuAccordion">
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-transparent text-gold fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileHome">
+                Home
+              </button>
+            </h2>
+            <div id="mobileHome" class="accordion-collapse collapse" data-bs-parent="#mobileMenuAccordion">
+              <div class="accordion-body px-2 py-1 flex-column d-flex gap-2">
+                <a href="index.html" class="text-secondary">Home — Agency Overview</a>
+                <a href="home-2.html" class="text-secondary">Home 2 — Conference Production</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="services.html" class="py-2 text-body fw-semibold">Services</a>
+        <a href="events.html" class="py-2 text-body fw-semibold">Events</a>
+        <a href="portfolio.html" class="py-2 text-body fw-semibold">Portfolio</a>
+        <a href="about.html" class="py-2 text-body fw-semibold">About Us</a>
+        <a href="insights.html" class="py-2 text-gold fw-bold">Insights</a>
+        <a href="contact.html" class="py-2 text-body fw-semibold">Contact Us</a>
+        <a href="dashboard.html" class="py-2 text-body fw-semibold">Dashboard</a>
+      </div>
+
+      <div class="d-flex flex-column gap-3 mt-4 pt-3 border-top border-secondary border-opacity-25">
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="small text-muted">Appearance Theme / RTL</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          </div>
+        </div>
+        <a href="signup.html" class="btn btn-gold w-100 py-2">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE HERO -->
+  <section class="section-padding bg-tertiary border-bottom border-color">
+    <div class="container max-w-800">
+      <span class="badge-gold mb-3">Event Strategy Blueprint</span>
+      <h1 class="display-3 font-serif mb-4">How to Plan a High-Impact Corporate Conference in 2026</h1>
+      <div class="d-flex align-items-center gap-4 text-muted small border-top border-secondary border-opacity-25 pt-3">
+        <span><i class="bi bi-person text-gold me-1"></i> Alexander Vance</span>
+        <span><i class="bi bi-calendar3 text-gold me-1"></i> September 12, 2026</span>
+        <span><i class="bi bi-clock text-gold me-1"></i> 8 Min Read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="section-padding bg-body">
+    <div class="container max-w-800">
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80" alt="Conference Planning Article Cover" class="img-fluid rounded border border-color shadow mb-5">
+
+      <article class="lh-lg text-secondary">
+        <p class="lead text-primary font-serif mb-4">Planning an international enterprise conference requires more than securing a ballroom and printing name badges. It demands an integrated operational framework that aligns corporate objectives with seamless technical execution.</p>
+
+        <h2 class="font-serif fs-2 text-primary mt-5 mb-3">1. Establishing Core Objectives & Financial Guardrails</h2>
+        <p>Before issuing RFPs to venues or AV production suppliers, executive stakeholders must lock down the event KPI parameters. Is the primary goal shareholder alignment, developer ecosystem growth, or brand positioning? Each objective dictates distinct room allocations and technical investments.</p>
+
+        <blockquote class="p-4 my-4 bg-tertiary border-start border-gold border-4 font-serif text-primary fs-4 fst-italic">
+          "A successful corporate conference removes friction from human connection through meticulous backstage planning."
+        </blockquote>
+
+        <h2 class="font-serif fs-2 text-primary mt-5 mb-3">2. Spatial CAD Planning & Venue Audits</h2>
+        <p>Never rely solely on venue marketing brochures. Conduct physical or 3D laser-scanned site audits to verify ceiling heights for LED screens, power distribution capacity, acoustic resonance, and VIP egress routes.</p>
+
+        <h2 class="font-serif fs-2 text-primary mt-5 mb-3">3. Redundant AV Systems & Live Broadcast Security</h2>
+        <p>In modern corporate conferences, keynotes are broadcast live to thousands of global remote attendees. A single point of failure in audio or power can damage corporate reputation. Ensure dual-generator backup systems and multi-path fiber internet connectivity.</p>
+      </article>
+
+      <!-- AUTHOR BIO -->
+      <div class="custom-card p-4 mt-5 border border-gold d-flex flex-column flex-sm-row align-items-center gap-4">
+        <div class="rounded-circle bg-gold-light text-gold font-serif fs-2 fw-bold d-flex align-items-center justify-content-center flex-shrink-0" style="width: 80px; height: 80px;">
+          AV
+        </div>
+        <div>
+          <h4 class="font-serif fs-4 mb-1">Alexander Vance</h4>
+          <p class="small text-gold fw-semibold mb-2">Managing Director, Summit & Co. Events</p>
+          <p class="small text-secondary mb-0">Alexander has led corporate event production across 40+ countries for over two decades. He advises C-suite executives on event strategy and risk mitigation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand-text fs-3 mb-3 d-inline-block" href="index.html">
+            <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+          </a>
+          <p class="small max-w-300">Precision behind every remarkable event. International event management and conference production firm.</p>
+          <div class="d-flex gap-3 text-gold fs-5 mt-3 footer-social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events Archive</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Firm</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Full Event Planning</a></li>
+            <li><a href="service-details.html">Conference Management</a></li>
+            <li><a href="service-details.html">Venue Sourcing & Contracts</a></li>
+            <li><a href="service-details.html">AV & Stage Production</a></li>
+            <li><a href="service-details.html">Executive Galas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Headquarters</h5>
+          <p class="small mb-2"><i class="bi bi-geo-alt text-gold me-2"></i> 550 Fifth Avenue, Suite 1800, New York, NY 10036</p>
+          <p class="small mb-2"><i class="bi bi-telephone text-gold me-2"></i> +1 (212) 555-0199</p>
+          <p class="small mb-3"><i class="bi bi-envelope text-gold me-2"></i> inquire@summitevents.com</p>
+          <a href="contact.html" class="btn btn-outline-gold btn-sm w-100">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Summit & Co. Events LLC. All rights reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="#" class="small">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+          <a href="#" class="small">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

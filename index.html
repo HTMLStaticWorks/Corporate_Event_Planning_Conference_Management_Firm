@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit & Co. Events | Corporate Event Planning & Conference Management Firm</title>
+  <meta name="description"
+    content="Summit & Co. Events engineers high-impact corporate conferences, galas, executive summits, product launches, and business gatherings with precision.">
+  <meta name="keywords"
+    content="Corporate Event Planning, Conference Management, Venue Sourcing, AV Production, Corporate Galas, Executive Summits">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Summit & Co. Events - Precision Behind Every Remarkable Event">
+  <meta property="og:description"
+    content="Full-service corporate event management agency for global business conferences, galas, and executive summits.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-text" href="index.html">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </a>
+
+      <div class="d-flex align-items-center d-xl-none">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-gold"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Menu -->
+      <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between" id="desktopNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item dropdown-item-custom active" href="index.html">Home — Agency Overview</a></li>
+              <li><a class="dropdown-item dropdown-item-custom" href="home-2.html">Home 2 — Conference Production</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="insights.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          <a href="signup.html" class="btn btn-gold text-nowrap">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV OFFCANVAS -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileNavOffcanvas"
+    aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+      <h5 class="offcanvas-title navbar-brand-text fs-4" id="mobileNavOffcanvasLabel">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="nav flex-column gap-2 mt-3">
+        <div class="accordion accordion-flush" id="mobileMenuAccordion">
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-transparent text-gold fw-semibold px-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mobileHome">
+                Home
+              </button>
+            </h2>
+            <div id="mobileHome" class="accordion-collapse collapse" data-bs-parent="#mobileMenuAccordion">
+              <div class="accordion-body px-2 py-1 flex-column d-flex gap-2">
+                <a href="index.html" class="text-secondary active">Home — Agency Overview</a>
+                <a href="home-2.html" class="text-secondary">Home 2 — Conference Production</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="services.html" class="py-2 text-body fw-semibold">Services</a>
+        <a href="events.html" class="py-2 text-body fw-semibold">Events</a>
+        <a href="portfolio.html" class="py-2 text-body fw-semibold">Portfolio</a>
+        <a href="about.html" class="py-2 text-body fw-semibold">About Us</a>
+        <a href="insights.html" class="py-2 text-body fw-semibold">Insights</a>
+        <a href="contact.html" class="py-2 text-body fw-semibold">Contact Us</a>
+        <a href="dashboard.html" class="py-2 text-body fw-semibold">Dashboard</a>
+      </div>
+
+      <div class="d-flex flex-column gap-3 mt-4 pt-3 border-top border-secondary border-opacity-25">
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="small text-muted">Appearance Theme / RTL</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          </div>
+        </div>
+        <a href="signup.html" class="btn btn-gold w-100 py-2">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-wrapper"
+    style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-2 py-5">
+      <div class="row align-items-center min-vh-75 py-5">
+        <div class="col-lg-9 col-xl-8 hero-content">
+          <span class="badge-gold mb-3">Premier Corporate Event Firm</span>
+          <h1 class="display-3 font-serif fw-bold">Events Designed With Precision.<br><span
+              class="text-gold">Experienced Without Compromise.</span></h1>
+          <p class="hero-subtitle lead">We plan, design, and execute high-impact business conferences, executive galas,
+            product reveals, and international summits from initial concept to final applause.</p>
+
+          <div class="hero-cta-group d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn btn-gold btn-lg"><i class="bi bi-calendar-event me-2"></i> Plan Your
+              Event</a>
+            <a href="portfolio.html" class="btn btn-outline-gold btn-lg"><i class="bi bi-grid-3x3-gap me-2"></i> Explore
+              Our Work</a>
+          </div>
+
+          <!-- Hero Stats Box -->
+          <div class="hero-stats-box mt-5">
+            <div class="row g-4 text-center text-md-start">
+              <div class="col-6 col-md-3">
+                <div class="stat-number counter-stat" data-count="450" data-suffix="+">0</div>
+                <div class="stat-label">Global Conferences</div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-number counter-stat" data-count="1200" data-suffix="+">0</div>
+                <div class="stat-label">Corporate Galas</div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-number counter-stat" data-count="45" data-suffix="+">0</div>
+                <div class="stat-label">International Cities</div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-number counter-stat" data-count="18" data-suffix=" Yrs">0</div>
+                <div class="stat-label">Industry Leadership</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST CONFERENCES & GALAS SHOWCASE -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+        <div>
+          <span class="badge-gold mb-2">Flagship Showcase</span>
+          <h2 class="display-5 font-serif mb-0">Past Conferences & Corporate Galas</h2>
+        </div>
+        <a href="events.html" class="btn btn-outline-gold mt-3 mt-md-0">View All Event Archives <i
+            class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Event Card 1 -->
+        <div class="col-lg-6">
+          <div class="custom-card p-0 overflow-hidden h-100">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+                alt="Global Leadership Summit" class="w-100" style="height: 320px; object-fit: cover;">
+              <span
+                class="badge bg-dark text-gold position-absolute top-0 end-0 m-3 px-3 py-2 border border-gold">Summit</span>
+            </div>
+            <div class="p-4 p-md-5">
+              <div class="d-flex gap-3 text-muted small mb-2">
+                <span><i class="bi bi-geo-alt text-gold"></i> Geneva, Swiss</span>
+                <span><i class="bi bi-calendar3 text-gold"></i> 2025</span>
+                <span><i class="bi bi-people text-gold"></i> 2,400 Guests</span>
+              </div>
+              <h3 class="font-serif fs-2 mb-3"><a href="event-details.html">Global Enterprise Leadership Summit</a></h3>
+              <p class="text-secondary mb-4">A 3-day multi-stage international executive conference featuring keynote
+                speeches, synchronized live broadcasts across 4 sub-halls, and seamless VIP attendee hospitality.</p>
+              <a href="event-details.html" class="text-gold fw-semibold link-underline-hover">Read Case Study <i
+                  class="bi bi-chevron-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="col-lg-6">
+          <div class="custom-card p-0 overflow-hidden h-100">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80"
+                alt="Executive Innovation Forum" class="w-100" style="height: 320px; object-fit: cover;">
+              <span
+                class="badge bg-dark text-gold position-absolute top-0 end-0 m-3 px-3 py-2 border border-gold">Corporate
+                Gala</span>
+            </div>
+            <div class="p-4 p-md-5">
+              <div class="d-flex gap-3 text-muted small mb-2">
+                <span><i class="bi bi-geo-alt text-gold"></i> New York, USA</span>
+                <span><i class="bi bi-calendar3 text-gold"></i> 2025</span>
+                <span><i class="bi bi-people text-gold"></i> 850 Executives</span>
+              </div>
+              <h3 class="font-serif fs-2 mb-3"><a href="event-details.html">Annual Innovation & Gala Dinner</a></h3>
+              <p class="text-secondary mb-4">An exclusive black-tie evening celebrating enterprise breakthroughs,
+                complete with bespoke stage lighting, orchestral scoring, and high-security protocol for Fortune 100
+                leaders.</p>
+              <a href="event-details.html" class="text-gold fw-semibold link-underline-hover">Read Case Study <i
+                  class="bi bi-chevron-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES PREVIEW -->
+  <section class="section-padding bg-tertiary">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-gold mb-2">Capabilities</span>
+        <h2 class="display-5 font-serif">Comprehensive Event Management Services</h2>
+        <p class="lead text-secondary">End-to-end execution backed by strategic planning, technical precision, and
+          flawless hospitality.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-kanban"></i></div>
+            <h3 class="font-serif fs-4 mb-3">Full Event Planning</h3>
+            <p class="text-secondary">Complete master strategy, budget architecture, vendor curation, and master
+              schedule orchestration tailored to corporate objectives.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Planning <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-mic"></i></div>
+            <h3 class="font-serif fs-4 mb-3">Conference Management</h3>
+            <p class="text-secondary">Speaker management, multi-track agenda coordination, delegate registration
+              systems, and seamless mainstage operational flow.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Conferences <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-building"></i></div>
+            <h3 class="font-serif fs-4 mb-3">Venue Sourcing</h3>
+            <p class="text-secondary">Global venue procurement, site feasibility audits, contract negotiation, and
+              spatial layout optimization for high-capacity events.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Venues <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-sliders"></i></div>
+            <h3 class="font-serif fs-4 mb-3">AV & Stage Production</h3>
+            <p class="text-secondary">High-definition LED arrays, studio-grade acoustics, intelligent lighting design,
+              multi-camera live streaming, and broadcast engineering.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Production <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-palette"></i></div>
+            <h3 class="font-serif fs-4 mb-3">Event Design & Branding</h3>
+            <p class="text-secondary">Spatial interior visual design, custom stage architecture, signage systems, and
+              branded immersive guest touchpoints.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Design <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card">
+            <div class="card-icon"><i class="bi bi-shield-check"></i></div>
+            <h3 class="font-serif fs-4 mb-3">On-Site Management</h3>
+            <p class="text-secondary">Live event directors, emergency response readiness, vendor control center, and
+              precise timeline management during showtime.</p>
+            <a href="service-details.html" class="text-gold fw-semibold">Explore Operations <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT PROCESS SECTION -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="badge-gold mb-2">Our Methodology</span>
+          <h2 class="display-5 font-serif mb-4">Precision Engineering From Discovery to Review</h2>
+          <p class="text-secondary mb-4">We replace uncertainty with structured operational rigor. Every detail is
+            vetted through our 6-step event blueprint.</p>
+          <a href="about.html" class="btn btn-gold">Learn About Our Standards</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="process-timeline ps-4 ms-lg-3">
+            <!-- Step 1 -->
+            <div class="process-step">
+              <span class="step-number">01</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Discover</h4>
+              <p class="text-secondary">Comprehensive alignment on business objectives, stakeholder expectations, target
+                audience persona, and budget constraints.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="process-step">
+              <span class="step-number">02</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Strategize</h4>
+              <p class="text-secondary">Architecting the overall event concept, operational master timeline, vendor RFP
+                protocols, and risk mitigation strategies.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="process-step">
+              <span class="step-number">03</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Plan</h4>
+              <p class="text-secondary">Securing venues, locking speaker agendas, finalizing production schematics, and
+                managing delegate logistics.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="process-step">
+              <span class="step-number">04</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Produce</h4>
+              <p class="text-secondary">Rigorous load-in management, stage construction, technical AV rehearsals, and
+                live countdown sync.</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="process-step">
+              <span class="step-number">05</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Execute</h4>
+              <p class="text-secondary">On-site event control command center ensuring flawless real-time execution and
+                VIP guest management.</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="process-step">
+              <span class="step-number">06</span>
+              <h4 class="font-serif fs-3 mt-1 mb-2">Review</h4>
+              <p class="text-secondary">Post-event analytics, delegate feedback collation, financial reconciliation, and
+                strategic outcome reporting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section-padding bg-tertiary">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-gold mb-2">Client Trust</span>
+        <h2 class="display-5 font-serif">What Enterprise Leaders Say</h2>
+        <p class="text-secondary">Excerpts from executive feedback on our conference and gala management.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card h-100">
+            <div class="text-gold mb-3 fs-5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-secondary mb-4">"Summit & Co. managed our 3,000-person global tech conference in
+              London with mathematical precision. Stage transitions were flawless and delegate feedback reached an
+              all-time high."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/eleanor_vance.jpg" alt="Eleanor Vance" class="rounded-circle object-fit-cover flex-shrink-0" style="width: 48px; height: 48px;">
+              <div>
+                <h5 class="fs-6 mb-0 font-serif">Eleanor Vance</h5>
+                <small class="text-muted">VP Corporate Ops, NexaGlobal</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card h-100">
+            <div class="text-gold mb-3 fs-5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-secondary mb-4">"Our annual executive awards gala required extreme discretion and
+              high-security protocol. The team executed an unforgettable evening with absolute professionalism."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/richard_sterling.jpg" alt="Richard Sterling" class="rounded-circle object-fit-cover flex-shrink-0" style="width: 48px; height: 48px;">
+              <div>
+                <h5 class="fs-6 mb-0 font-serif">Richard Sterling</h5>
+                <h6 class="small text-muted mb-0">Managing Director, Horizon Capital</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-6 col-xl-4">
+          <div class="custom-card h-100">
+            <div class="text-gold mb-3 fs-5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-secondary mb-4">"The AV production and live broadcast setup exceeded our highest
+              standards. Summit & Co. is the gold standard for enterprise event management."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/claire_laurent.jpg" alt="Claire Laurent" class="rounded-circle object-fit-cover flex-shrink-0" style="width: 48px; height: 48px;">
+              <div>
+                <h5 class="fs-6 mb-0 font-serif">Claire Laurent</h5>
+                <small class="text-muted">Chief Communications Officer, Apex Health</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="section-padding bg-dark-accent text-white text-center position-relative overflow-hidden">
+    <div class="container position-relative z-2">
+      <span class="badge-gold mb-3">Partner With Us</span>
+      <h2 class="display-4 font-serif text-white mb-3">Your Next Event Deserves More Than a Checklist.</h2>
+      <p class="lead text-light max-w-600 mx-auto mb-4 opacity-75">Let’s build an immersive corporate event experience
+        that leaves a lasting impression on your stakeholders.</p>
+      <a href="contact.html" class="btn btn-gold btn-lg py-3 px-5"><i class="bi bi-calendar-check me-2"></i> Request
+        Event Consultation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand-text fs-3 mb-3 d-inline-block" href="index.html">
+            <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+          </a>
+          <p class="small max-w-300">Precision behind every remarkable event. International event management and
+            conference production firm.</p>
+          <div class="d-flex gap-3 text-gold fs-5 mt-3 footer-social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events Archive</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Firm</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Full Event Planning</a></li>
+            <li><a href="service-details.html">Conference Management</a></li>
+            <li><a href="service-details.html">Venue Sourcing & Contracts</a></li>
+            <li><a href="service-details.html">AV & Stage Production</a></li>
+            <li><a href="service-details.html">Executive Galas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Headquarters</h5>
+          <p class="small mb-2"><i class="bi bi-geo-alt text-gold me-2"></i> 550 Fifth Avenue, Suite 1800, New York, NY
+            10036</p>
+          <p class="small mb-2"><i class="bi bi-telephone text-gold me-2"></i> +1 (212) 555-0199</p>
+          <p class="small mb-3"><i class="bi bi-envelope text-gold me-2"></i> inquire@summitevents.com</p>
+          <a href="contact.html" class="btn btn-outline-gold btn-sm w-100">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Summit & Co. Events LLC. All rights reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="#" class="small">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+          <a href="#" class="small">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

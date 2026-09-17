@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Plan Your Event | Summit & Co. Events</title>
+  <meta name="description" content="Request a corporate event consultation or contact Summit & Co. Events global headquarters in New York, London, Geneva, and Singapore.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-text" href="index.html">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </a>
+
+      <div class="d-flex align-items-center d-xl-none">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-gold"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Menu -->
+      <div class="collapse navbar-collapse d-none d-xl-flex justify-content-between" id="desktopNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item dropdown-item-custom" href="index.html">Home — Agency Overview</a></li>
+              <li><a class="dropdown-item dropdown-item-custom" href="home-2.html">Home 2 — Conference Production</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="insights.html">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          <a href="signup.html" class="btn btn-gold text-nowrap">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV OFFCANVAS -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+      <h5 class="offcanvas-title navbar-brand-text fs-4" id="mobileNavOffcanvasLabel">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="nav flex-column gap-2 mt-3">
+        <div class="accordion accordion-flush" id="mobileMenuAccordion">
+          <div class="accordion-item bg-transparent border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-transparent text-gold fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileHome">
+                Home
+              </button>
+            </h2>
+            <div id="mobileHome" class="accordion-collapse collapse" data-bs-parent="#mobileMenuAccordion">
+              <div class="accordion-body px-2 py-1 flex-column d-flex gap-2">
+                <a href="index.html" class="text-secondary">Home — Agency Overview</a>
+                <a href="home-2.html" class="text-secondary">Home 2 — Conference Production</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="services.html" class="py-2 text-body fw-semibold">Services</a>
+        <a href="events.html" class="py-2 text-body fw-semibold">Events</a>
+        <a href="portfolio.html" class="py-2 text-body fw-semibold">Portfolio</a>
+        <a href="about.html" class="py-2 text-body fw-semibold">About Us</a>
+        <a href="insights.html" class="py-2 text-body fw-semibold">Insights</a>
+        <a href="contact.html" class="py-2 text-gold fw-bold">Contact Us</a>
+        <a href="dashboard.html" class="py-2 text-body fw-semibold">Dashboard</a>
+      </div>
+
+      <div class="d-flex flex-column gap-3 mt-4 pt-3 border-top border-secondary border-opacity-25">
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="small text-muted">Appearance Theme / RTL</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="theme-toggle-btn" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="theme-toggle-btn rtl-toggle-btn" aria-label="Toggle RTL mode">RTL</button>
+          </div>
+        </div>
+        <a href="signup.html" class="btn btn-gold w-100 py-2">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section class="section-padding bg-tertiary border-bottom border-color">
+    <div class="container text-center max-w-800">
+      <span class="badge-gold mb-2">Initiate Planning</span>
+      <h1 class="display-3 font-serif mb-3">Request an Event Consultation</h1>
+      <p class="lead text-secondary">Connect directly with our senior event strategists and technical directors to discuss your event blueprint, budget, and timeline.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT & FORM SECTION -->
+  <section class="section-padding bg-body">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Information -->
+        <div class="col-lg-4">
+          <div class="custom-card h-100 p-4 p-md-5">
+            <h3 class="font-serif fs-3 mb-4">Global Headquarters</h3>
+            
+            <div class="mb-4">
+              <h5 class="font-serif fs-5 text-gold mb-1"><i class="bi bi-geo-alt me-2"></i> New York</h5>
+              <p class="small text-secondary mb-0">550 Fifth Avenue, Suite 1800<br>New York, NY 10036</p>
+              <p class="small text-muted mt-1"><i class="bi bi-telephone text-gold me-1"></i> +1 (212) 555-0199</p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="font-serif fs-5 text-gold mb-1"><i class="bi bi-geo-alt me-2"></i> London</h5>
+              <p class="small text-secondary mb-0">100 Bishopsgate, Level 24<br>London EC2N 4AG, UK</p>
+              <p class="small text-muted mt-1"><i class="bi bi-telephone text-gold me-1"></i> +44 20 7946 0912</p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="font-serif fs-5 text-gold mb-1"><i class="bi bi-geo-alt me-2"></i> Geneva</h5>
+              <p class="small text-secondary mb-0">Rue du Rhône 42<br>1204 Geneva, Switzerland</p>
+            </div>
+
+            <div class="pt-3 border-top border-secondary border-opacity-25">
+              <h5 class="font-serif fs-5 mb-2">Direct Inquiries</h5>
+              <p class="small text-secondary mb-1"><i class="bi bi-envelope text-gold me-2"></i> inquire@summitevents.com</p>
+              <p class="small text-secondary mb-0"><i class="bi bi-clock text-gold me-2"></i> Mon – Fri: 08:00 – 19:00 EST</p>
+            </div>
+
+            <div class="pt-3 border-top border-secondary border-opacity-25 mt-3">
+              <h5 class="font-serif fs-5 mb-2">Connect With Us</h5>
+              <div class="d-flex gap-2 text-gold fs-5 mt-2 social-icon-group flex-wrap">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-hover-btn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-hover-btn"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-hover-btn"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-hover-btn"><i class="bi bi-facebook"></i></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-hover-btn"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form -->
+        <div class="col-lg-8">
+          <div class="custom-card p-4 p-md-5 border border-gold">
+            <h3 class="font-serif fs-2 mb-2">Event Specification Brief</h3>
+            <p class="text-secondary small mb-4">Complete the fields below to submit your event scope for confidential review by our event directors.</p>
+
+            <!-- Success Alert Banner -->
+            <div class="alert alert-success d-none form-success-alert mb-4" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i> <strong>Consultation Request Received!</strong> Thank you. Our senior event director will contact you within 24 business hours to schedule a confidential briefing.
+            </div>
+
+            <form class="needs-validation" id="eventConsultationForm" novalidate>
+              <div class="row g-3">
+                <!-- 1. Full Name -->
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label form-label-custom">Full Name *</label>
+                  <input type="text" class="form-control form-control-custom" id="fullName" placeholder="e.g. Eleanor Vance" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <!-- 2. Company -->
+                <div class="col-md-6">
+                  <label for="companyName" class="form-label form-label-custom">Company / Organization *</label>
+                  <input type="text" class="form-control form-control-custom" id="companyName" placeholder="e.g. NexaGlobal Capital" required>
+                  <div class="invalid-feedback">Please enter your company or organization.</div>
+                </div>
+
+                <!-- 3. Work Email -->
+                <div class="col-md-6">
+                  <label for="workEmail" class="form-label form-label-custom">Work Email *</label>
+                  <input type="email" class="form-control form-control-custom" id="workEmail" placeholder="e.g. evance@nexaglobal.com" required>
+                  <div class="invalid-feedback">Please enter a valid work email address.</div>
+                </div>
+
+                <!-- 4. Phone Number -->
+                <div class="col-md-6">
+                  <label for="phoneNum" class="form-label form-label-custom">Phone Number *</label>
+                  <input type="tel" class="form-control form-control-custom" id="phoneNum" placeholder="+1 (555) 019-2834" required>
+                  <div class="invalid-feedback">Please enter your contact phone number.</div>
+                </div>
+
+                <!-- 5. Event Type -->
+                <div class="col-md-6">
+                  <label for="eventType" class="form-label form-label-custom">Event Type *</label>
+                  <select class="form-select form-select-custom" id="eventType" required>
+                    <option value="" selected disabled>Select Event Category...</option>
+                    <option value="Conference">International Conference / Summit</option>
+                    <option value="Gala">Corporate Gala Dinner</option>
+                    <option value="Product Launch">Product Launch Keynote</option>
+                    <option value="Awards Ceremony">Awards Ceremony</option>
+                    <option value="Executive Forum">Executive C-Suite Gathering</option>
+                    <option value="Networking">Partner Networking Event</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an event category.</div>
+                </div>
+
+                <!-- 6. Estimated Date -->
+                <div class="col-md-6">
+                  <label for="eventDate" class="form-label form-label-custom">Target Event Date / Quarter</label>
+                  <input type="text" class="form-control form-control-custom" id="eventDate" placeholder="e.g. Q4 2026 or Oct 15-18, 2026">
+                </div>
+
+                <!-- 7. Attendee Count -->
+                <div class="col-md-6">
+                  <label for="attendeeCount" class="form-label form-label-custom">Estimated Attendees</label>
+                  <select class="form-select form-select-custom" id="attendeeCount">
+                    <option value="" selected disabled>Select Attendance Scale...</option>
+                    <option value="Under 250">Under 250 Guests</option>
+                    <option value="250-500">250 – 500 Attendees</option>
+                    <option value="500-1000">500 – 1,000 Delegates</option>
+                    <option value="1000-3000">1,000 – 3,000 Delegates</option>
+                    <option value="3000+">3,000+ International Delegates</option>
+                  </select>
+                </div>
+
+                <!-- 8. Target Location -->
+                <div class="col-md-6">
+                  <label for="locationPref" class="form-label form-label-custom">Preferred Location / City</label>
+                  <input type="text" class="form-control form-control-custom" id="locationPref" placeholder="e.g. Geneva, New York, London, Singapore">
+                </div>
+
+                <!-- 9. Budget Range -->
+                <div class="col-md-6">
+                  <label for="budgetRange" class="form-label form-label-custom">Estimated Budget Allocation</label>
+                  <select class="form-select form-select-custom" id="budgetRange">
+                    <option value="" selected disabled>Select Budget Bracket...</option>
+                    <option value="$100k - $250k">$100,000 – $250,000</option>
+                    <option value="$250k - $500k">$250,000 – $500,000</option>
+                    <option value="$500k - $1M">$500,000 – $1,000,000</option>
+                    <option value="$1M+">$1,000,000+</option>
+                  </select>
+                </div>
+
+                <!-- 10. Services Required Checkboxes -->
+                <div class="col-12 my-2">
+                  <label class="form-label form-label-custom d-block">Services Required</label>
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="srvPlanning" checked>
+                      <label class="form-check-label small" for="srvPlanning">Full Planning</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="srvVenue">
+                      <label class="form-check-label small" for="srvVenue">Venue Sourcing</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="srvAV">
+                      <label class="form-check-label small" for="srvAV">AV & Stage Production</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="srvDesign">
+                      <label class="form-check-label small" for="srvDesign">Event Design</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="srvOps">
+                      <label class="form-check-label small" for="srvOps">On-Site Ops</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 11. Message -->
+                <div class="col-12">
+                  <label for="projectMsg" class="form-label form-label-custom">Event Scope & Objectives *</label>
+                  <textarea class="form-control form-control-custom" id="projectMsg" rows="4" placeholder="Briefly describe the vision, agenda structure, keynote requirements, or specific challenges..." required></textarea>
+                  <div class="invalid-feedback">Please provide details regarding your event vision or objectives.</div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gold btn-lg w-100 py-3">Submit Consultation Request <i class="bi bi-send me-2"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL EMBEDDED MAP -->
+  <section class="bg-tertiary py-5 border-top border-color">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge-gold mb-2">Global Operations Map</span>
+        <h4 class="font-serif fs-3 mb-1">Visit Our Geneva Headquarters</h4>
+        <p class="text-secondary small mb-0">Rue du Rhône 42, 1204 Geneva, Switzerland | Palexpo Convention Hub</p>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg border border-gold" style="height: 420px;">
+        <iframe 
+          src="https://maps.google.com/maps?q=Rue%20du%20Rh%C3%B4ne%2042%2C%201204%20Geneva%2C%20Switzerland&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Summit & Co. Geneva Headquarters Map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a class="navbar-brand-text fs-3 mb-3 d-inline-block" href="index.html">
+            <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+          </a>
+          <p class="small max-w-300">Precision behind every remarkable event. International event management and conference production firm.</p>
+          <div class="d-flex gap-3 text-gold fs-5 mt-3 footer-social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events Archive</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Firm</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Full Event Planning</a></li>
+            <li><a href="service-details.html">Conference Management</a></li>
+            <li><a href="service-details.html">Venue Sourcing & Contracts</a></li>
+            <li><a href="service-details.html">AV & Stage Production</a></li>
+            <li><a href="service-details.html">Executive Galas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Headquarters</h5>
+          <p class="small mb-2"><i class="bi bi-geo-alt text-gold me-2"></i> 550 Fifth Avenue, Suite 1800, New York, NY 10036</p>
+          <p class="small mb-2"><i class="bi bi-telephone text-gold me-2"></i> +1 (212) 555-0199</p>
+          <p class="small mb-3"><i class="bi bi-envelope text-gold me-2"></i> inquire@summitevents.com</p>
+          <a href="contact.html" class="btn btn-outline-gold btn-sm w-100">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Summit & Co. Events LLC. All rights reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="#" class="small">Privacy Policy</a>
+          <a href="#" class="small">Terms of Service</a>
+          <a href="#" class="small">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

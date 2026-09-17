@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Leadership Summit 2027 — Coming Soon | Summit & Co. Events</title>
+  <meta name="description" content="Early access registration for the upcoming Global Enterprise Leadership Summit 2027 managed by Summit & Co. Events.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-between hero-wrapper text-white" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80');">
+  <div class="hero-overlay"></div>
+
+  <!-- HEADER -->
+  <header class="py-4 position-relative z-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand-text fs-3 text-white" href="index.html">
+        <i class="bi bi-layers-half text-gold"></i> SUMMIT & CO.
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-toggle-btn text-white border-white border-opacity-25" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="theme-toggle-btn rtl-toggle-btn text-white border-white border-opacity-25" aria-label="Toggle RTL mode">RTL</button>
+        <a href="index.html" class="btn btn-outline-gold btn-sm">Main Website</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TEASER CONTENT -->
+  <main class="py-5 position-relative z-2 text-center my-auto">
+    <div class="container max-w-800">
+      <span class="badge-gold mb-3">Summit Announcement</span>
+      <h1 class="display-3 font-serif text-white fw-bold mb-3">Global Enterprise Leadership Summit 2027</h1>
+      <p class="lead text-light max-w-650 mx-auto mb-5 opacity-90">We are engineering the next benchmark in international corporate conferences. Early delegate registration and keynote RFP submissions open soon.</p>
+
+      <!-- COUNTDOWN TIMER -->
+      <div class="row g-3 justify-content-center mb-5" id="countdownTimer">
+        <div class="col-3 col-md-2">
+          <div class="p-3 bg-dark bg-opacity-75 border border-gold rounded text-center backdrop-blur">
+            <span class="fs-1 font-serif text-gold fw-bold d-block" id="daysNum">128</span>
+            <span class="small text-uppercase opacity-75">Days</span>
+          </div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="p-3 bg-dark bg-opacity-75 border border-gold rounded text-center backdrop-blur">
+            <span class="fs-1 font-serif text-gold fw-bold d-block" id="hoursNum">14</span>
+            <span class="small text-uppercase opacity-75">Hours</span>
+          </div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="p-3 bg-dark bg-opacity-75 border border-gold rounded text-center backdrop-blur">
+            <span class="fs-1 font-serif text-gold fw-bold d-block" id="minsNum">42</span>
+            <span class="small text-uppercase opacity-75">Minutes</span>
+          </div>
+        </div>
+        <div class="col-3 col-md-2">
+          <div class="p-3 bg-dark bg-opacity-75 border border-gold rounded text-center backdrop-blur">
+            <span class="fs-1 font-serif text-gold fw-bold d-block" id="secsNum">18</span>
+            <span class="small text-uppercase opacity-75">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER REGISTER -->
+      <div class="max-w-500 mx-auto">
+        <div class="alert alert-success d-none form-success-alert mb-3 small" role="alert">
+          <i class="bi bi-check-circle-fill me-2"></i> You're on the priority notification list for Summit 2027!
+        </div>
+
+        <form class="needs-validation d-flex flex-column flex-sm-row gap-2" id="comingSoonForm" novalidate>
+          <input type="email" class="form-control form-control-custom bg-dark text-white border-secondary" placeholder="Enter corporate email..." required>
+          <button type="submit" class="btn btn-gold text-nowrap py-2 px-4">Request VIP Access</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 position-relative z-2 border-top border-white border-opacity-10 text-center small text-light opacity-75">
+    © 2026 Summit & Co. Events LLC. All rights reserved.
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live Countdown Script
+    const daysEl = document.getElementById('daysNum');
+    const hoursEl = document.getElementById('hoursNum');
+    const minsEl = document.getElementById('minsNum');
+    const secsEl = document.getElementById('secsNum');
+
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 128);
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff > 0) {
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const m = Math.floor((diff / 1000 / 60) % 60);
+        const s = Math.floor((diff / 1000) % 60);
+
+        if (daysEl) daysEl.textContent = d;
+        if (hoursEl) hoursEl.textContent = h < 10 ? '0' + h : h;
+        if (minsEl) minsEl.textContent = m < 10 ? '0' + m : m;
+        if (secsEl) secsEl.textContent = s < 10 ? '0' + s : s;
+      }
+    }
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
