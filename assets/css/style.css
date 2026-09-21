@@ -416,6 +416,37 @@ a:hover {
   margin-bottom: 2.2rem;
 }
 
+/* Hero CTA Group - Equal Button Sizing */
+.hero-cta-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+.hero-cta-group .btn {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0.85rem 1.8rem !important;
+  font-size: 0.9rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .hero-cta-group {
+    width: 100% !important;
+  }
+
+  .hero-cta-group .btn {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
 .hero-stats-box {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
@@ -548,8 +579,8 @@ a:hover {
 /* --- Timeline Component --- */
 .process-timeline {
   position: relative;
-  padding-left: 2rem;
-  border-left: 2px solid var(--border-color);
+  padding-left: 2rem !important;
+  border-left: 2px solid var(--accent-gold-border);
 }
 
 .process-step {
@@ -557,16 +588,22 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
 .process-step::before {
   content: '';
   position: absolute;
-  left: -2.6rem;
-  top: 0.2rem;
+  left: calc(-2rem - 9px);
+  top: 0.35rem;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: var(--bg-primary);
   border: 3px solid var(--accent-gold);
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(197, 160, 89, 0.25);
 }
 
 .step-number {
@@ -576,6 +613,20 @@ a:hover {
   font-weight: 700;
   line-height: 1;
 }
+
+/* RTL Timeline Adjustments */
+[dir="rtl"] .process-timeline {
+  padding-left: 0 !important;
+  padding-right: 2rem !important;
+  border-left: none !important;
+  border-right: 2px solid var(--accent-gold-border) !important;
+}
+
+[dir="rtl"] .process-step::before {
+  left: auto !important;
+  right: calc(-2rem - 9px) !important;
+}
+
 
 /* --- Form Control Styling --- */
 .form-control-custom,
@@ -587,6 +638,25 @@ a:hover {
   padding: 0.85rem 1.1rem;
   font-size: 0.92rem;
   transition: var(--transition-fast);
+}
+
+.form-select-custom,
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23C5A059' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-select-custom {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23D4AF37' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .form-select option,
+[data-theme="dark"] .form-select-custom option {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
 }
 
 .form-control-custom:focus,
@@ -605,6 +675,7 @@ a:hover {
   letter-spacing: 0.02em;
   margin-bottom: 0.4rem;
 }
+
 
 /* --- Footer --- */
 .footer-custom {
@@ -921,6 +992,14 @@ a:hover {
   padding: 1.25rem !important;
 }
 
+.p-2\.5 {
+  padding: 0.65rem 0.85rem !important;
+}
+
+.dashboard-main .custom-card:not(.h-100) {
+  height: auto !important;
+}
+
 /* RTL Dashboard Adjustments */
 [dir="rtl"] .dashboard-sidebar {
   left: auto;
@@ -953,5 +1032,86 @@ a:hover {
     margin-right: 0 !important;
   }
 }
+
+.vendor-action-btn {
+  width: 105px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+/* ==========================================================================
+   Login & Signup Page Interactive Hover Enhancements (Task 18)
+   ========================================================================== */
+a.text-gold,
+.text-gold {
+  transition: var(--transition-fast);
+}
+
+a.text-gold:hover,
+.text-gold:hover {
+  color: var(--accent-gold-hover) !important;
+  text-decoration: underline !important;
+}
+
+.toggle-password-btn {
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.toggle-password-btn:hover {
+  color: var(--accent-gold) !important;
+  transform: translateY(-50%) scale(1.15) !important;
+}
+
+.toggle-password-btn:hover i {
+  color: var(--accent-gold) !important;
+}
+
+.btn-outline-gold:hover i {
+  color: #0F172A !important;
+  transform: scale(1.15);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-gold i {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.form-check-label a:hover {
+  color: var(--accent-gold-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   Portfolio Page Dark Mode Tag Contrast Enhancements (Task 19)
+   ========================================================================== */
+[data-theme="dark"] .badge-gold {
+  background-color: rgba(212, 175, 55, 0.25) !important;
+  color: #F8D675 !important;
+  border: 1px solid #D4AF37 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
+}
+
+[data-theme="dark"] .portfolio-filter-btn {
+  background-color: var(--bg-tertiary) !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+  color: #F8FAFC !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .portfolio-filter-btn:hover,
+[data-theme="dark"] .portfolio-filter-btn.active {
+  background-color: #D4AF37 !important;
+  border-color: #E5C158 !important;
+  color: #0F172A !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
 
 
