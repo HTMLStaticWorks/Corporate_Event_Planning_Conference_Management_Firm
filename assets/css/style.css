@@ -953,6 +953,7 @@ a:hover {
   background-color: var(--bg-tertiary);
   border-bottom: 1px solid var(--border-color);
   z-index: 1030;
+  top: 64px;
 }
 
 .sidebar-nav-link {
