@@ -29,8 +29,8 @@
       </a>
     </div>
 
-    <div>
-      <button class="btn btn-sm btn-outline-gold d-xl-none" id="sidebarToggleBtn" aria-label="Toggle menu">
+    <div class="d-lg-none">
+      <button class="btn btn-sm btn-outline-gold d-lg-none" id="sidebarToggleBtn" aria-label="Toggle menu">
         <i class="bi bi-list fs-5"></i>
       </button>
     </div>
@@ -40,7 +40,7 @@
     <!-- LEFT SIDEBAR MENU -->
     <aside class="dashboard-sidebar" id="dashboardSidebar">
       <!-- Sidebar Header -->
-      <div class="sidebar-header p-3 border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between d-xl-none">
+      <div class="sidebar-header p-3 border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between d-lg-none">
         <span class="fw-bold text-gold small"><i class="bi bi-layers-half me-1"></i> Menu</span>
         <button class="btn-close text-reset" type="button" id="sidebarCloseBtn" aria-label="Close sidebar"></button>
       </div>
@@ -89,8 +89,8 @@
         </div>
         <div class="d-flex align-items-center gap-2 mb-3 p-2 rounded bg-body border border-color">
           <div
-            class="rounded-circle bg-gold text-dark fw-bold d-flex align-items-center justify-content-center flex-shrink-0"
-            style="width: 32px; height: 32px; font-size: 0.8rem;">MV</div>
+            class="profile-avatar rounded-circle bg-gold text-dark fw-bold d-flex align-items-center justify-content-center flex-shrink-0"
+            style="width: 36px; height: 36px; font-size: 0.95rem;"><i class="bi bi-person-fill"></i></div>
           <div class="overflow-hidden">
             <div class="small fw-semibold text-truncate" style="font-size: 0.85rem;">Marcus Vance</div>
             <div class="text-muted" style="font-size: 0.72rem;">Executive Client Director</div>
@@ -104,7 +104,7 @@
     <!-- RIGHT MAIN WORKSPACE CONTENT -->
     <main class="dashboard-main flex-grow-1 min-vh-100">
       <!-- PORTAL TOPBAR -->
-      <header class="dashboard-topbar px-3 px-lg-4 py-3 sticky-top d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 gap-sm-3">
+      <header class="dashboard-topbar px-3 px-lg-4 py-3 d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 gap-sm-3">
         <div>
           <h1 class="fs-5 font-serif mb-0" id="portalHeaderTitle">Client Portal Dashboard</h1>
           <div class="small text-muted" style="font-size: 0.75rem;">Geneva Enterprise Leadership Summit 2026
@@ -189,6 +189,28 @@
           <!-- TAB 1: OVERVIEW -->
           <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
             aria-labelledby="pills-overview-tab">
+
+            <!-- WELCOME MESSAGE BANNER (Task 3 & 4) -->
+            <div class="welcome-banner p-3 p-md-4 mb-3">
+              <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="profile-avatar bg-gold text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 shadow-sm" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                      <h2 class="font-serif fs-4 mb-0">Welcome back, Marcus Vance</h2>
+                      <span class="badge bg-gold text-dark small fw-bold">Executive Portal</span>
+                    </div>
+                    <p class="text-secondary small mb-0">Here is your live master briefing for the <strong class="text-gold">Geneva Enterprise Leadership Summit 2026</strong> (#SMC-2026). All primary vendor contracts, attendee quotas, and stage AV milestones are on schedule.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2 flex-shrink-0">
+                  <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2.5 py-1.5 small"><i class="bi bi-check-circle-fill me-1"></i> Operations Active</span>
+                </div>
+              </div>
+            </div>
+
             <div class="row g-3">
               <div class="col-lg-8">
                 <!-- Operational Readiness Card -->
@@ -286,8 +308,8 @@
                   </h4>
                   <div class="d-flex align-items-center gap-3 mb-2">
                     <div
-                      class="avatar-circle bg-gold text-dark font-serif fw-bold rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
-                      style="width: 42px; height: 42px; font-size: 0.9rem;">AV</div>
+                      class="avatar-circle profile-avatar bg-gold text-dark font-serif fw-bold rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 42px; height: 42px; font-size: 0.95rem;"><i class="bi bi-person-fill"></i></div>
                     <div>
                       <h5 class="font-serif fs-6 mb-0">Alexander Vance</h5>
                       <span class="small text-muted" style="font-size: 0.78rem;">Lead Event Director</span>
@@ -739,7 +761,7 @@
       const sidebarNavLinks = document.querySelectorAll('.sidebar-nav-link');
       sidebarNavLinks.forEach(link => {
         link.addEventListener('click', () => {
-          if (window.innerWidth < 1200 && sidebar) {
+          if (window.innerWidth < 992 && sidebar) {
             sidebar.classList.remove('show');
           }
         });
